@@ -1,0 +1,21 @@
+/* Global Section Heading Styles */
+.section-heading {
+  font-size: 2.5rem !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1px !important;
+  color: #222 !important;
+  margin-bottom: 1rem !important;
+}
+
+@media (max-width: 768px) {
+  .section-heading {
+    font-size: 2rem !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .section-heading {
+    font-size: 1.8rem !important;
+  }
+}

@@ -1,0 +1,252 @@
+.footer-section {
+  background: rgba(13, 202, 240, 0.1);
+  padding: 4rem 0 2rem;
+  position: relative;
+  overflow: hidden;
+  border-top: 1px solid rgba(0, 166, 147, 0.1);
+}
+
+.footer-blob-1 {
+  position: absolute;
+  top: 20%;
+  right: 5%;
+  width: 200px;
+  height: 200px;
+  background: rgba(0, 166, 147, 0.12);
+  border-radius: 30% 70% 70% 30%;
+  animation: morph 15s ease-in-out infinite;
+}
+
+.footer-blob-2 {
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  width: 150px;
+  height: 150px;
+  background: rgba(14, 165, 233, 0.1);
+  border-radius: 60% 40% 30% 70%;
+  animation: float 12s ease-in-out infinite reverse;
+}
+
+.footer-brand {
+  position: relative;
+  z-index: 2;
+}
+
+.brand-name {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 1rem;
+  background: linear-gradient(45deg, #00a693, #0ea5e9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.brand-tagline {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.social-links {
+  display: flex;
+  gap: 12px;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(45deg, #00a693, #0ea5e9);
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.social-link:hover {
+  transform: translateY(-3px) scale(1.1);
+  box-shadow: 0 8px 20px rgba(0, 166, 147, 0.3);
+}
+
+.footer-links h5,
+.footer-contact h5 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 1.2rem;
+  position: relative;
+}
+
+.footer-links h5::after,
+.footer-contact h5::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 30px;
+  height: 2px;
+  background: linear-gradient(45deg, #00a693, #0ea5e9);
+  border-radius: 2px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 0.8rem;
+}
+
+.footer-links a {
+  color: #555;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.footer-links a:hover {
+  color: #00a693;
+  transform: translateX(5px);
+}
+
+.footer-links a::before {
+  content: '';
+  position: absolute;
+  left: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 2px;
+  background: #00a693;
+  transition: width 0.3s ease;
+}
+
+.footer-links a:hover::before {
+  width: 10px;
+}
+
+.footer-contact {
+  position: relative;
+  z-index: 2;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 1rem;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.contact-icon {
+  font-size: 1.1rem;
+  width: 20px;
+}
+
+.footer-bottom {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(0, 166, 147, 0.1);
+}
+
+.copyright {
+  color: #666;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.footer-bottom-links {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: flex-end;
+}
+
+.footer-bottom-links a {
+  color: #666;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.footer-bottom-links a:hover {
+  color: #00a693;
+}
+
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+
+  50% {
+    transform: translateY(-15px) rotate(180deg);
+  }
+}
+
+@keyframes morph {
+
+  0%,
+  100% {
+    border-radius: 30% 70% 40% 60%;
+    transform: rotate(0deg);
+  }
+
+  25% {
+    border-radius: 58% 42% 75% 25%;
+    transform: rotate(90deg);
+  }
+
+  50% {
+    border-radius: 50% 50% 33% 67%;
+    transform: rotate(180deg);
+  }
+
+  75% {
+    border-radius: 33% 67% 58% 42%;
+    transform: rotate(270deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-section {
+    padding: 3rem 0 1.5rem;
+  }
+
+  .footer-bottom-links {
+    justify-content: center;
+    margin-top: 1rem;
+  }
+
+  .social-links {
+    justify-content: flex-start;
+  }
+
+  .brand-name {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer-bottom-links {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .social-link {
+    width: 36px;
+    height: 36px;
+    font-size: 1rem;
+  }
+}
