@@ -170,37 +170,7 @@ const AboutPage = () => {
           </div>
         </section>
 
-        {/* Team Section */}
-        <section className="about-team">
-          <div className="container">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              className="section-header"
-            >
-              <h2>Meet Our Team</h2>
-              <p>The talented individuals behind our success</p>
-            </motion.div>
-            <div className="row">
-              {team.map((member, index) => (
-                <div key={index} className="col-lg-3 col-md-6 mb-4">
-                  <motion.div
-                    initial={{ opacity: 0, y: 30 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.6, delay: index * 0.1 }}
-                    className="team-card"
-                  >
-                    <img src={member.image} alt={member.name} />
-                    <h4>{member.name}</h4>
-                    <h5>{member.role}</h5>
-                    <p>{member.description}</p>
-                  </motion.div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
+
 
         {/* Mission Section */}
         <section className="about-mission">
