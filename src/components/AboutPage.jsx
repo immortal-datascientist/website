@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 // import Navigation from './Navigation';
-import Footer from './Footer';
+// import Footer from './Footer';
 import './AboutPage.css';
 
 const AboutPage = () => {
@@ -93,13 +93,13 @@ const AboutPage = () => {
                 >
                   <h2>Our Story</h2>
                   <p>
-                    Founded in 2019, we started as a small team of passionate developers and data scientists 
-                    with a vision to help businesses harness the power of technology. What began as a startup 
+                    Founded in 2019, we started as a small team of passionate developers and data scientists
+                    with a vision to help businesses harness the power of technology. What began as a startup
                     in a small office has grown into a leading technology consultancy serving clients worldwide.
                   </p>
                   <p>
-                    Our journey has been marked by continuous learning, innovation, and a commitment to 
-                    delivering exceptional results. We've helped hundreds of companies transform their 
+                    Our journey has been marked by continuous learning, innovation, and a commitment to
+                    delivering exceptional results. We've helped hundreds of companies transform their
                     operations, improve efficiency, and achieve their digital transformation goals.
                   </p>
                 </motion.div>
@@ -214,14 +214,14 @@ const AboutPage = () => {
                 >
                   <h2>Our Mission</h2>
                   <p>
-                    To empower businesses with innovative technology solutions that drive growth, 
-                    efficiency, and competitive advantage. We believe in the transformative power 
-                    of technology and data, and we're committed to making these tools accessible 
+                    To empower businesses with innovative technology solutions that drive growth,
+                    efficiency, and competitive advantage. We believe in the transformative power
+                    of technology and data, and we're committed to making these tools accessible
                     and valuable for organizations of all sizes.
                   </p>
                   <p>
-                    Through our expertise in fullstack development, data science, AI, and specialized 
-                    training programs, we help our clients navigate the digital landscape and achieve 
+                    Through our expertise in fullstack development, data science, AI, and specialized
+                    training programs, we help our clients navigate the digital landscape and achieve
                     their strategic objectives.
                   </p>
                 </motion.div>
@@ -230,7 +230,7 @@ const AboutPage = () => {
           </div>
         </section>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };

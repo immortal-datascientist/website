@@ -91,7 +91,7 @@ const Footer = () => {
                 <h5>Contact Info</h5>
                 <div className="contact-item">
                   <span className="contact-icon">📍</span>
-                  <span>Tamilnau, India</span>
+                  <span>Tamilnadu, India</span>
                 </div>
                 <div className="contact-item">
                   <span className="contact-icon">📧</span>
