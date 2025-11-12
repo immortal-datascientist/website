@@ -17,7 +17,7 @@ const ServicesPage = () => {
       shortDesc: "End-to-end web applications with modern technology stacks",
       fullDesc: "We build robust, scalable web applications using cutting-edge technologies like React, Node.js, Python, and cloud platforms. Our full-stack solutions cover everything from responsive frontend interfaces to powerful backend APIs and database architecture.",
       features: ["React & Vue.js Frontend", "Node.js & Python Backend", "Database Design & Optimization", "API Development & Integration", "Cloud Deployment & Scaling"],
-      image: "/src/assets/images/web-devs.jpg",
+      image: "/assets/images/web-devs.jpg",
       technologies: ["React", "Node.js", "Python", "MongoDB", "PostgreSQL", "AWS"]
     },
     {
@@ -27,7 +27,7 @@ const ServicesPage = () => {
       shortDesc: "Transform data into actionable business insights",
       fullDesc: "Our data science team helps organizations unlock the value in their data through advanced analytics, machine learning models, and intelligent dashboards. We create data pipelines that turn raw information into strategic advantages.",
       features: ["Machine Learning Models", "Predictive Analytics", "Data Visualization", "Business Intelligence", "Real-time Dashboards"],
-      image: "/src/assets/images/datascience.png",
+      image: "/assets/images/datascience.png",
       technologies: ["Python", "R", "TensorFlow", "Tableau", "Power BI", "Apache Spark"]
     },
     {
@@ -37,7 +37,7 @@ const ServicesPage = () => {
       shortDesc: "Native and cross-platform mobile solutions",
       fullDesc: "We develop high-performance mobile applications for iOS and Android platforms. Whether you need native apps for optimal performance or cross-platform solutions for faster deployment, we deliver exceptional mobile experiences.",
       features: ["iOS Native Development", "Android Native Development", "React Native Apps", "Flutter Development", "App Store Optimization"],
-      image: "/src/assets/images/mob-app-dev.jpg",
+      image: "/assets/images/mob-app-dev.jpg",
       technologies: ["Swift", "Kotlin", "React Native", "Flutter", "Firebase", "Redux"]
     },
     {
@@ -47,7 +47,7 @@ const ServicesPage = () => {
       shortDesc: "AI-powered solutions for business automation",
       fullDesc: "Harness the power of artificial intelligence to automate processes, enhance decision-making, and create intelligent user experiences. Our AI solutions include chatbots, recommendation systems, and predictive models.",
       features: ["Natural Language Processing", "Computer Vision", "Chatbot Development", "Recommendation Systems", "Predictive Modeling"],
-      image: "/src/assets/images/ai5.png",
+      image: "/assets/images/ai5.png",
       technologies: ["TensorFlow", "PyTorch", "OpenAI", "Hugging Face", "scikit-learn", "NLTK"]
     },
     {
@@ -57,7 +57,7 @@ const ServicesPage = () => {
       shortDesc: "Scalable cloud solutions and DevOps",
       fullDesc: "We design and implement robust cloud infrastructure that scales with your business. Our DevOps practices ensure reliable deployments, monitoring, and maintenance of your applications in the cloud.",
       features: ["AWS/Azure/GCP Setup", "CI/CD Pipelines", "Container Orchestration", "Infrastructure as Code", "Monitoring & Logging"],
-      image: "/src/assets/images/service-three-bg.jpg",
+      image: "/assets/images/service-three-bg.jpg",
       technologies: ["AWS", "Docker", "Kubernetes", "Terraform", "Jenkins", "Prometheus"]
     },
     {
@@ -67,7 +67,7 @@ const ServicesPage = () => {
       shortDesc: "Comprehensive banking software training",
       fullDesc: "Master Finacle, the world's leading core banking solution, with our expert-led training programs. We provide hands-on experience with real-world banking scenarios and industry best practices.",
       features: ["Core Banking Modules", "Internet Banking", "Treasury Management", "Risk Management", "Certification Programs"],
-      image: "/src/assets/images/finance.jpg",
+      image: "/assets/images/finance.jpg",
       technologies: ["Finacle", "Oracle", "Java", "SQL", "Banking APIs", "Financial Systems"]
     }
   ];

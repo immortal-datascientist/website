@@ -68,19 +68,19 @@ export default function Industries() {
                 >
                     <div className="industry-item">
                         <div className="diamond-border">
-                            <img src="/src/assets/images/bank.png" alt="Healthcare" className="industry-image" />
+                            <img src="/assets/images/bank.png" alt="Healthcare" className="industry-image" />
                         </div>
                         <h4 className="industry-name">Banking</h4>
                     </div>
                     <div className="industry-item">
                         <div className="diamond-border">
-                            <img src="/src/assets/images/e-coms.jpg" alt="Real Estate" className="industry-image" />
+                            <img src="/assets/images/e-coms.jpg" alt="Real Estate" className="industry-image" />
                         </div>
                         <h4 className="industry-name">E-Commerce</h4>
                     </div>
                     <div className="industry-item">
                         <div className="diamond-border">
-                            <img src="/src/assets/images/img3.jpg" alt="E-Commerce" className="industry-image" />
+                            <img src="/assets/images/img3.jpg" alt="E-Commerce" className="industry-image" />
                         </div>
                         <h4 className="industry-name">Artificial Intelligence</h4>
                     </div>

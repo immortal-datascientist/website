@@ -2,14 +2,13 @@ import React, { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useNavigate } from 'react-router-dom'
 import { GradualSpacing } from './GradualSpacing'
-
 import './Hero.css'
 
 const IMAGES = [
-  '/src/assets/images/ai1.jpg',
-  '/src/assets/images/point-girl.jpg',
+  '/assets/images/ai1.jpg',
+  '/assets/images/point-girl.jpg',
   // '/src/assets/images/point-girl.jpg',
-  '/src/assets/images/women-with-laptop.jpg'
+  '/assets/images/women-with-laptop.jpg'
 ]
 
 const fadeUp = {
@@ -49,21 +48,21 @@ const Hero = () => {
           <div className="hero-left">
             <h1 className="hero-title">
               <div className="animated-text">
-                <GradualSpacing 
-                  text="Immortal Future" 
-                  className="text-line hero-text-primary" 
+                <GradualSpacing
+                  text="Immortal Future"
+                  className="text-line hero-text-primary"
                   delay={0}
                 />
-                <GradualSpacing 
-                  text="Infotech" 
-                  className="text-line highlight-line hero-text-highlight" 
+                <GradualSpacing
+                  text="Infotech"
+                  className="text-line highlight-line hero-text-highlight"
                   delay={1.4}
                 />
               </div>
             </h1>
 
-            <motion.p 
-              className="hero-sub" 
+            <motion.p
+              className="hero-sub"
               variants={fadeUp}
               initial="hidden"
               animate="show"
@@ -75,8 +74,8 @@ const Hero = () => {
               ensuring your digital presence remains future-ready and competitive.
             </motion.p>
 
-            <motion.div 
-              className="btn-row" 
+            <motion.div
+              className="btn-row"
               variants={fadeUp}
               initial="hidden"
               animate="show"

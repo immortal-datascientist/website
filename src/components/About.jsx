@@ -10,22 +10,22 @@ const About = () => {
     {
       title: "FULLSTACK DEVELOPMENT",
       description: "We specialize in end-to-end web development using modern technologies like React, Node.js, and cloud platforms. Our team creates responsive, scalable applications that deliver exceptional user experiences across all devices. From frontend interfaces to backend APIs, we handle every aspect of development with precision and expertise. We follow industry best practices and agile methodologies to ensure timely delivery and maintainable code. Our fullstack solutions are designed to grow with your business and adapt to changing market demands.",
-      image: "/src/assets/images/web-devs.jpg"
+      image: "/assets/images/web-devs.jpg"
     },
     {
       title: "DATA SCIENCE & ANALYTICS",
       description: "Transform your raw data into actionable insights with our comprehensive data science solutions. We build robust data pipelines, implement machine learning models, and create intelligent analytics dashboards that drive business decisions. Our expertise spans from data collection and preprocessing to advanced predictive modeling and visualization. We help organizations unlock the hidden value in their data through statistical analysis, pattern recognition, and automated reporting systems. Our data-driven approach ensures measurable results and competitive advantages in today's data-centric world.",
-      image: "/src/assets/images/datascience.png"
+      image: "/assets/images/datascience.png"
     },
     {
       title: "FINACLE TRAINING",
       description: "Master the world's leading core banking solution with our comprehensive Finacle training programs. We provide hands-on experience with Finacle's complete suite including Corporate Internet Banking, Retail Banking, Treasury, and Risk Management modules. Our expert trainers guide you through real-world scenarios, configuration techniques, and best practices used in major banking institutions. Whether you're a banking professional, IT specialist, or fresh graduate, our structured curriculum ensures you gain practical skills in Finacle implementation, customization, and support. Join thousands of successful professionals who have advanced their careers through our industry-recognized Finacle certification programs.",
-      image: "/src/assets/images/finance.jpg"
+      image: "/assets/images/finance.jpg"
     },
     {
       title: "ARTIFICIAL INTELLIGENCE",
       description: "Harness the power of artificial intelligence to revolutionize your business operations. Our AI solutions include machine learning algorithms, natural language processing, computer vision, and predictive analytics. We develop intelligent systems that automate complex processes, enhance decision-making, and provide personalized user experiences. From chatbots and recommendation engines to advanced neural networks, our AI expertise helps businesses stay competitive in the digital age. Transform your data into intelligent insights and automated solutions that drive innovation and efficiency.",
-      image: "/src/assets/images/ai5.png"
+      image: "/assets/images/ai5.png"
     }
   ]
 

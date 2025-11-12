@@ -7,37 +7,37 @@ const PORTFOLIO_ITEMS = [
   {
     id: 1,
     title: "E-commerce",
-    image: "/src/assets/images/ecommerce.png",
+    image: "/assets/images/ecommerce.png",
     category: "Web Development"
   },
   {
     id: 2,
     title: "Artificial Intelligence",
-    image: "/src/assets/images/ai6.png",
+    image: "/assets/images/ai6.png",
     category: "AI"
   },
   {
     id: 3,
     title: "Analytics Dashboard",
-    image: "/src/assets/images/dataanalysis.png",
+    image: "/assets/images/dataanalysis.png",
     category: "Data Science"
   },
   {
     id: 4,
     title: "Banking",
-    image: "/src/assets/images/bank1.png",
+    image: "/assets/images/bank1.png",
     category: "Finacle"
   },
   {
     id: 5,
     title: "Website Development",
-    image: "/src/assets/images/fullstack.png",
+    image: "/assets/images/fullstack.png",
     category: "Fullstack Development"
   },
   {
     id: 6,
     title: "Data Analysis",
-    image: "/src/assets/images/data1.png",
+    image: "/assets/images/data1.png",
     category: "Web Development"
   }
 ]

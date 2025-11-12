@@ -16,25 +16,25 @@ const AboutPage = () => {
     {
       name: 'John Smith',
       role: 'CEO & Founder',
-      image: '/src/assets/images/img1.jpg',
+      image: '/assets/images/img1.jpg',
       description: 'Visionary leader with 10+ years in tech innovation'
     },
     {
       name: 'Sarah Johnson',
       role: 'CTO',
-      image: '/src/assets/images/img2.jpg',
+      image: '/assets/images/img2.jpg',
       description: 'Expert in AI and machine learning technologies'
     },
     {
       name: 'Mike Chen',
       role: 'Lead Developer',
-      image: '/src/assets/images/img3.jpg',
+      image: '/assets/images/img3.jpg',
       description: 'Fullstack developer specializing in modern frameworks'
     },
     {
       name: 'Emily Davis',
       role: 'Data Scientist',
-      image: '/src/assets/images/img4.jpg',
+      image: '/assets/images/img4.jpg',
       description: 'Analytics expert turning data into business insights'
     }
   ];
@@ -109,7 +109,7 @@ const AboutPage = () => {
                   initial={{ opacity: 0, x: 50 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.8 }}
-                  src="/src/assets/images/welcome.jpeg"
+                  src="/assets/images/welcome.jpeg"
                   alt="Our Story"
                   className="story-image"
                 />
