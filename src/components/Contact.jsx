@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
-import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter } from 'lucide-react'
+import { Mail, Phone, MapPin, Send, Linkedin, MessageCircle } from 'lucide-react'
 import './Contact.css'
 
 const Contact = () => {
@@ -46,9 +46,9 @@ const Contact = () => {
   ]
 
   const socialLinks = [
-    { icon: Github, href: '#', label: 'GitHub' },
-    { icon: Linkedin, href: '#', label: 'LinkedIn' },
-    { icon: Twitter, href: '#', label: 'Twitter' }
+    { icon: Linkedin, href: 'https://www.linkedin.com/company/immortal-future-infotech-india-private-limited/', label: 'LinkedIn' },
+    { icon: MessageCircle, href: 'https://wa.me/919159855985', label: 'WhatsApp' },
+    { icon: Mail, href: 'mailto:hr@ifit.co.in', label: 'Email' }
   ]
 
   return (
