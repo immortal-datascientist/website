@@ -1,9 +1,10 @@
 /* Continuous moving products section */
 .products-section {
-  padding: 2rem 0;
+  /* padding: 1rem 0; */
   background: linear-gradient(135deg, rgba(0, 166, 147, 0.05), rgba(13, 202, 240, 0.1), rgba(14, 165, 233, 0.05));
   overflow: hidden;
   position: relative;
+  /* border:1px solid; */
 }
 
 
@@ -18,19 +19,20 @@
   font-size: 3rem;
   font-weight: 700;
   color: var(--immortal-main);
-  margin: 0 0 0.5rem 0;
+  margin: 0 0 0;
+  margin-bottom: 20px;
 }
 
 .products-header p {
   font-size: 1.2rem;
-  color: rgba(15, 15, 15, 0.7);
-  margin: 0;
+  color: black;
+
 }
 
 .products-viewport {
   width: 100%;
   overflow: hidden;
-  height: 220px;
+  height: 180px;
   display: flex;
   align-items: center;
   margin-top: 1rem;
@@ -60,7 +62,7 @@
 
 .product-card {
   width: 380px;
-  height: 180px;
+  height: 200px;
   display: flex;
   flex-direction: row;
   align-items: center;

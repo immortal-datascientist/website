@@ -1,22 +1,23 @@
 .development-process-section {
   /* background: #000000; */
   background: linear-gradient(135deg, rgba(0, 166, 147, 0.05), rgba(13, 202, 240, 0.1), rgba(14, 165, 233, 0.05));
-  padding: 2rem 1rem;
+  /* padding: 1rem 1rem; */
   position: relative;
   overflow: hidden;
-  min-height: 450px;
+  min-height: 400px;
+  /* border: 1px solid rgba(0, 166, 147, 0.3); */
 }
 
 .process-header {
   text-align: center;
-  margin-bottom: 7rem;
+  margin-bottom: 5rem;
 }
 
 .process-header h2 {
   font-size: 2.5rem;
   font-weight: 700;
   color: var(--immortal-main);
-  margin: 0;
+  margin-top: 50px;
 }
 
 .process-timeline {

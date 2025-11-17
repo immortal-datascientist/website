@@ -101,14 +101,14 @@ const ServicesPage = () => {
       <div className="services-page">
         {/* Hero Section */}
         <section className="services-hero">
-          <div className="container">
+          <div className="container-fluid">
 
           </div>
         </section>
 
         {/* Services Grid */}
         <section className="services-grid-section">
-          <div className="container">
+          <div className="container-fluid">
             <h1 className='service'>Our Services</h1>
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -143,7 +143,7 @@ const ServicesPage = () => {
 
         {/* Selected Service Details */}
         < section className="service-details-section" >
-          <div className="container">
+          <div className="container-fluid">
             <div className="service-connection-wrapper">
               <div className="connection-line"></div>
               <motion.div
@@ -178,7 +178,7 @@ const ServicesPage = () => {
 
         {/* Process Section */}
         {/* < section className="process-section" >
-          <div className="container">
+          <div className="container-fluid">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -209,7 +209,7 @@ const ServicesPage = () => {
 
         {/* CTA Section */}
         < section className="services-cta" >
-          <div className="container">
+          <div className="container-fluid">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}

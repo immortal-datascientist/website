@@ -6,9 +6,9 @@ import './Portfolio.css'
 const PORTFOLIO_ITEMS = [
   {
     id: 1,
-    title: "E-commerce",
-    image: "/assets/images/ecommerce.png",
-    category: "Web Development"
+    title: "Banking",
+    image: "/assets/images/bank1.png",
+    category: "Finacle"
   },
   {
     id: 2,
@@ -24,10 +24,11 @@ const PORTFOLIO_ITEMS = [
   },
   {
     id: 4,
-    title: "Banking",
-    image: "/assets/images/bank1.png",
-    category: "Finacle"
+    title: "E-commerce",
+    image: "/assets/images/ecommerce.png",
+    category: "Web Development"
   },
+
   {
     id: 5,
     title: "Website Development",
@@ -98,7 +99,7 @@ const Portfolio = () => {
       <div className="portfolio-blob-1"></div>
       <div className="portfolio-blob-2"></div>
 
-      <Container>
+      <div className="container-fluid">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -178,9 +179,7 @@ const Portfolio = () => {
             </motion.div>
           )}
         </AnimatePresence>
-      </Container>
-
-
+      </div>
     </section>
   )
 }

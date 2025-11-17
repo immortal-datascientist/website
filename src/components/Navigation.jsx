@@ -49,12 +49,12 @@ function Navigation() {
                     <img src="/assets/logo_company.png" alt="Logo" className="logo-img" />
                     <span className="logo-text">{displayText}</span>
                 </div>
-                <div className={`nav-menu ${mobileMenuOpen ? 'active' : ''}`}>
-                    <Link to="/" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Home</Link>
-                    <Link to="/about" className="nav-link" onClick={() => setMobileMenuOpen(false)}>About</Link>
-                    <Link to="/services" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Services</Link>
-                    <Link to="/portfolio" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Portfolio</Link>
-                    <Link to="/contact" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Contact</Link>
+                <div className="nav-menu">
+                    <Link to="/" className="nav-link">Home</Link>
+                    <Link to="/about" className="nav-link">About</Link>
+                    <Link to="/services" className="nav-link">Services</Link>
+                    <Link to="/portfolio" className="nav-link">Portfolio</Link>
+                    <Link to="/contact" className="nav-link">Contact</Link>
                 </div>
                 <div className="hamburger-menu" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
                     {mobileMenuOpen ? <FaTimes className="menu-toggle-icon" /> : <FaBars className="menu-toggle-icon" />}
@@ -89,4 +89,4 @@ function Navigation() {
     );
 }
 
-export default Navigation;
+export default Navigation

@@ -32,7 +32,7 @@ const Footer = () => {
       <div className="footer-blob-1"></div>
       <div className="footer-blob-2"></div>
 
-      <Container>
+      <div className="container-fluid">
         <motion.div
           variants={footerVariants}
           initial="hidden"
@@ -42,7 +42,7 @@ const Footer = () => {
           <Row className="g-4">
             <Col lg={4} md={6}>
               <motion.div variants={itemVariants} className="footer-brand">
-                <h3 className="brand-name">Immortal Future InfoTech</h3>
+                <img src="/assets/images/Company_logo.png" alt="Company Logo" className="footer-logo" />
                 <p className="brand-tagline">
                   Transforming ideas into digital reality with cutting-edge technology and innovative solutions.
                 </p>
@@ -112,7 +112,7 @@ const Footer = () => {
             <Row className="align-items-center">
               <Col md={6}>
                 <p className="copyright">
-                  © {currentYear} Immortal Future InfoTech. All rights reserved.
+                  © {currentYear} Company Name. All rights reserved.
                 </p>
               </Col>
               <Col md={6}>
@@ -125,9 +125,9 @@ const Footer = () => {
             </Row>
           </motion.div>
         </motion.div>
-      </Container>
+      </div>
     </footer>
   );
 };
 
-export default Footer;
+export default Footer

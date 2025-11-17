@@ -24,7 +24,7 @@ const PROCESS_STEPS = [
 const DevelopmentProcess = () => {
   return (
     <section className="development-process-section">
-      <div className="container">
+      <div className="container-fluid">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -66,4 +66,4 @@ const DevelopmentProcess = () => {
   );
 };
 
-export default DevelopmentProcess;
+export default DevelopmentProcess

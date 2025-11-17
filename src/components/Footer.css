@@ -33,15 +33,11 @@
   z-index: 2;
 }
 
-.brand-name {
-  font-size: 1.8rem;
-  font-weight: 700;
-  color: #222;
+.footer-logo {
+  height: 50px;
+  width: auto;
   margin-bottom: 1rem;
-  background: linear-gradient(45deg, #00a693, #0ea5e9);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  object-fit: contain;
 }
 
 .brand-tagline {

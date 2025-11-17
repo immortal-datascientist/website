@@ -53,7 +53,7 @@ const Contact = () => {
 
   return (
     <section id="contact" className="contact-section">
-      <div className="contact-container">
+      <div className="contact-container container-fluid">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -217,4 +217,4 @@ const Contact = () => {
   )
 }
 
-export default Contact 
+export default Contact

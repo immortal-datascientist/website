@@ -6,8 +6,8 @@ import './AboutPage.css';
 
 const AboutPage = () => {
   const stats = [
-    { number: '500+', label: 'Projects Completed' },
-    { number: '50+', label: 'Happy Clients' },
+    { number: '80+', label: 'Projects Completed' },
+    { number: '40+', label: 'Happy Clients' },
     { number: '5+', label: 'Years Experience' },
     { number: '24/7', label: 'Support Available' }
   ];
@@ -68,7 +68,7 @@ const AboutPage = () => {
       <div className="about-page">
         {/* Hero Section */}
         <section className="about-hero">
-          <div className="container">
+          <div className="container-fluid">
             <motion.div
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
@@ -83,7 +83,7 @@ const AboutPage = () => {
 
         {/* Story Section */}
         <section className="about-story">
-          <div className="container">
+          <div className="container-fluid">
             <div className="row align-items-center">
               <div className="col-lg-6">
                 <motion.div
@@ -120,7 +120,7 @@ const AboutPage = () => {
 
         {/* Stats Section */}
         <section className="about-stats">
-          <div className="container">
+          <div className="container-fluid">
             <div className="row">
               {stats.map((stat, index) => (
                 <div key={index} className="col-lg-3 col-md-6 mb-4">
@@ -141,7 +141,7 @@ const AboutPage = () => {
 
         {/* Values Section */}
         <section className="about-values">
-          <div className="container">
+          <div className="container-fluid">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -174,7 +174,7 @@ const AboutPage = () => {
 
         {/* Mission Section */}
         <section className="about-mission">
-          <div className="container">
+          <div className="container-fluid">
             <div className="row">
               <div className="col-lg-8 mx-auto text-center">
                 <motion.div

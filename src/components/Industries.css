@@ -1,6 +1,6 @@
 .industries-section {
     /* background: linear-gradient(135deg, rgba(0, 166, 147, 0.05), rgba(13, 202, 240, 0.1), rgba(14, 165, 233, 0.05)); */
-    padding: 2rem 0;
+    padding: 1rem 0;
     position: relative;
     overflow: hidden;
 }
@@ -46,6 +46,7 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     cursor: pointer;
 }
+
 
 .icon-box {
     font-size: 2.5rem;
@@ -114,7 +115,7 @@
     font-size: 1.2rem;
     font-weight: 600;
     color: #333;
-    margin: 10px;
+    margin: 15px;
     position: relative;
     top: -1px;
 }

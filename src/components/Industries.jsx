@@ -38,12 +38,12 @@ const cardVariants = {
 
 export default function Industries() {
     return (
-        <section className="industries-section py-5">
+        <section className="industries-section py-2">
             <div className="industries-blob-1"></div>
             <div className="industries-blob-2"></div>
             <div className="industries-blob-3"></div>
 
-            <Container>
+            <div className="container-fluid">
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -64,28 +64,73 @@ export default function Industries() {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.8, delay: 0.3 }}
-                    className="industries-grid mt-5"
+                    className="mt-5"
                 >
-                    <div className="industry-item">
-                        <div className="diamond-border">
-                            <img src="/assets/images/bank.png" alt="Healthcare" className="industry-image" />
+                    {/* First Row - 4 Industries */}
+                    <div className="row justify-content-center mb-4">
+                        <div className="col-lg-3 col-md-6 mb-4">
+                            <div className="industry-item">
+                                <div className="diamond-border">
+                                    <img src="/assets/images/bank.png" alt="Banking" className="industry-image" />
+                                </div>
+                                <h4 className="industry-name">Banking</h4>
+                            </div>
                         </div>
-                        <h4 className="industry-name">Banking</h4>
+                        <div className="col-lg-3 col-md-6 mb-4">
+                            <div className="industry-item">
+                                <div className="diamond-border">
+                                    <img src="/assets/images/e-coms.jpg" alt="E-Commerce" className="industry-image" />
+                                </div>
+                                <h4 className="industry-name">E-Commerce</h4>
+                            </div>
+                        </div>
+                        <div className="col-lg-3 col-md-6 mb-4">
+                            <div className="industry-item">
+                                <div className="diamond-border">
+                                    <img src="/assets/images/img3.jpg" alt="Artificial Intelligence" className="industry-image" />
+                                </div>
+                                <h4 className="industry-name">Artificial Intelligence</h4>
+                            </div>
+                        </div>
+                        <div className="col-lg-3 col-md-6 mb-4">
+                            <div className="industry-item">
+                                <div className="diamond-border">
+                                    <img src="/assets/images/media.png" alt="Healthcare" className="industry-image" />
+                                </div>
+                                <h4 className="industry-name">Media & Entertainment</h4>
+                            </div>
+                        </div>
                     </div>
-                    <div className="industry-item">
-                        <div className="diamond-border">
-                            <img src="/assets/images/e-coms.jpg" alt="Real Estate" className="industry-image" />
+
+                    {/* Second Row - 3 Industries */}
+                    <div className="row justify-content-center">
+                        <div className="col-lg-3 col-md-6 mb-4">
+                            <div className="industry-item">
+                                <div className="diamond-border">
+                                    <img src="/assets/images/educations.png" alt="Education" className="industry-image" />
+                                </div>
+                                <h4 className="industry-name">Education</h4>
+                            </div>
                         </div>
-                        <h4 className="industry-name">E-Commerce</h4>
-                    </div>
-                    <div className="industry-item">
-                        <div className="diamond-border">
-                            <img src="/assets/images/img3.jpg" alt="E-Commerce" className="industry-image" />
+                        <div className="col-lg-3 col-md-6 mb-4">
+                            <div className="industry-item">
+                                <div className="diamond-border">
+                                    <img src="/assets/images/tele.png" alt="Real Estate" className="industry-image" />
+                                </div>
+                                <h4 className="industry-name">Telecommunications</h4>
+                            </div>
                         </div>
-                        <h4 className="industry-name">Artificial Intelligence</h4>
+                        <div className="col-lg-3 col-md-6 mb-4">
+                            <div className="industry-item">
+                                <div className="diamond-border">
+                                    <img src="/assets/images/mob-app-dev.jpg" alt="Manufacturing" className="industry-image" />
+                                </div>
+                                <h4 className="industry-name">Mobile Application</h4>
+                            </div>
+                        </div>
                     </div>
                 </motion.div>
-            </Container>
+            </div>
         </section>
     );
 }

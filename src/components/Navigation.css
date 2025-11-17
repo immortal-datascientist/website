@@ -181,7 +181,7 @@
 
 @media (max-width: 900px) {
   .nav-menu {
-    display: none;
+    display: none !important;
   }
 
   .hamburger-menu {

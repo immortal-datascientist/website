@@ -19,13 +19,23 @@ const About = () => {
     },
     {
       title: "FINACLE TRAINING",
-      description: "Master the world's leading core banking solution with our comprehensive Finacle training programs. We provide hands-on experience with Finacle's complete suite including Corporate Internet Banking, Retail Banking, Treasury, and Risk Management modules. Our expert trainers guide you through real-world scenarios, configuration techniques, and best practices used in major banking institutions. Whether you're a banking professional, IT specialist, or fresh graduate, our structured curriculum ensures you gain practical skills in Finacle implementation, customization, and support. Join thousands of successful professionals who have advanced their careers through our industry-recognized Finacle certification programs.",
+      description: "Master the world's leading core banking solution with our comprehensive Finacle training programs. We provide hands-on experience with Finacle's complete suite including Corporate Internet Banking, Retail Banking, Treasury, and Risk Management modules. Our expert trainers guide you through real-world scenarios, configuration techniques, and best practices used in major banking institutions. Whether you're a banking professional, IT specialist, or fresh graduate, our structured curriculum ensures you gain practical skills in Finacle implementation, customization, and support.",
       image: "/assets/images/finance.jpg"
     },
     {
       title: "ARTIFICIAL INTELLIGENCE",
       description: "Harness the power of artificial intelligence to revolutionize your business operations. Our AI solutions include machine learning algorithms, natural language processing, computer vision, and predictive analytics. We develop intelligent systems that automate complex processes, enhance decision-making, and provide personalized user experiences. From chatbots and recommendation engines to advanced neural networks, our AI expertise helps businesses stay competitive in the digital age. Transform your data into intelligent insights and automated solutions that drive innovation and efficiency.",
       image: "/assets/images/ai5.png"
+    },
+    {
+      title: "IOT SOLUTIONS",
+      description: "Connect and control your physical world with our comprehensive Internet of Things solutions. We design and implement smart device ecosystems that collect real-time data, automate processes, and provide remote monitoring capabilities. Our IoT expertise covers sensor integration, device connectivity, cloud platforms, and mobile applications. From smart homes and industrial automation to healthcare monitoring and environmental sensing, we create intelligent networks that transform how businesses operate and interact with their environment.",
+      image: "/assets/images/iot1.png"
+    },
+    {
+      title: "SALESFORCE SOLUTIONS",
+      description: "Maximize your customer relationships with our expert Salesforce implementation and customization services. We help businesses leverage the full power of Salesforce CRM to streamline sales processes, enhance customer service, and drive marketing automation. Our certified consultants provide end-to-end solutions including system setup, data migration, custom development, and user training. Transform your customer management with powerful analytics, workflow automation, and integrated communication tools that boost productivity and revenue growth.",
+      image: "/assets/images/sales.png"
     }
   ]
 
