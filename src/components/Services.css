@@ -141,6 +141,13 @@
     border-color: rgba(17, 24, 39, 0.14);
 }
 
+.section-heading-left {
+    /* border: 1px solid; */
+    padding: 10px;
+    font-weight: bold;
+}
+
+
 /* Icon area */
 .service-media {
     width: 100%;
@@ -171,6 +178,7 @@
 .service-copy p {
     color: #374151;
 }
+
 
 
 

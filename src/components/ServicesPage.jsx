@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 // import Navigation from './Navigation';
@@ -8,6 +8,15 @@ import './ServicesPage.css';
 const ServicesPage = () => {
   const [activeService, setActiveService] = useState(0);
   const navigate = useNavigate();
+  const serviceDetailsRef = useRef(null);
+
+  const handleServiceClick = (index) => {
+    setActiveService(index);
+    serviceDetailsRef.current?.scrollIntoView({
+      behavior: 'smooth',
+      block: 'center'
+    });
+  };
 
   const services = [
     {
@@ -106,75 +115,68 @@ const ServicesPage = () => {
           </div>
         </section>
 
-        {/* Services Grid */}
-        <section className="services-grid-section">
-          <div className="container-fluid">
-            <h1 className='service'>Our Services</h1>
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              className="section-header"
-            >
-              <h2>What We Offer</h2>
-              <p>Cutting-edge solutions tailored to your business needs</p>
-            </motion.div>
-
-            <div className="services-circles-grid">
-              {services.map((service, index) => (
-                <motion.div
-                  key={service.id}
-                  initial={{ opacity: 0, scale: 0.8 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.6, delay: index * 0.1 }}
-                  className="service-circle"
-                  onClick={() => setActiveService(index)}
-                >
-                  <img
-                    src={service.image}
-                    alt={service.title}
-                    className="service-circle-image"
-                  />
-                </motion.div>
-              ))}
-            </div>
+        {/* Stacked Services Cards */}
+        <section className="c-services">
+          <h1 className="c-services__title">Our Services</h1>
+          
+          <div className="c-services__list">
+            {services.map((service, index) => (
+              <article key={service.id} className="c-services__item">
+                <figure className="c-services__item-figure">
+                  <img src={service.image} alt={service.title} />
+                </figure>
+                
+                <div className="c-services__item-info">
+                  <h2 className="c-services__item-title">{service.title}</h2>
+                  <p className="c-services__item-subtitle">{service.shortDesc}</p>
+                  <p className="c-services__item-excerpt">{service.fullDesc}</p>
+                  
+                  <div className="c-services__item-features">
+                    {service.features.slice(0, 3).map((feature, idx) => (
+                      <span key={idx} className="feature-tag">• {feature}</span>
+                    ))}
+                  </div>
+                  
+                  <button 
+                    className="c-services__item-link"
+                    onClick={() => handleServiceClick(index)}
+                  >
+                    Learn More
+                  </button>
+                </div>
+              </article>
+            ))}
           </div>
-        </section >
+        </section>
 
         {/* Selected Service Details */}
-        < section className="service-details-section" >
+        <section className="service-details-section" ref={serviceDetailsRef}>
           <div className="container-fluid">
-            <div className="service-connection-wrapper">
-              <div className="connection-line"></div>
-              <motion.div
-                key={activeService}
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6 }}
-                className="selected-service-card"
-              >
-                <div className="service-header">
-                  {/* <div className="service-icon-large">{services[activeService].icon}</div> */}
-                  <h3>{services[activeService].title}</h3>
-                </div>
-                <div className="service-features-list">
-                  {services[activeService].features.map((feature, featureIndex) => (
-                    <motion.div
-                      key={featureIndex}
-                      initial={{ opacity: 0, x: -20 }}
-                      animate={{ opacity: 1, x: 0 }}
-                      transition={{ duration: 0.4, delay: featureIndex * 0.1 }}
-                      className="feature-line"
-                    >
-                      <span className="feature-bullet">•</span>
-                      {feature}
-                    </motion.div>
+            <motion.div
+              key={activeService}
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              className="selected-service-details"
+            >
+              <h3>{services[activeService].title} - Full Details</h3>
+              <div className="service-tech-stack">
+                <h4>Technologies:</h4>
+                <div className="tech-tags">
+                  {services[activeService].technologies.map((tech, idx) => (
+                    <span key={idx} className="tech-tag">{tech}</span>
                   ))}
                 </div>
-              </motion.div>
-            </div>
+              </div>
+              <div className="service-all-features">
+                <h4>All Features:</h4>
+                {services[activeService].features.map((feature, idx) => (
+                  <div key={idx} className="feature-item">• {feature}</div>
+                ))}
+              </div>
+            </motion.div>
           </div>
-        </section >
+        </section>
 
         {/* Process Section */}
         {/* < section className="process-section" >

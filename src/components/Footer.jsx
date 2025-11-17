@@ -112,7 +112,7 @@ const Footer = () => {
             <Row className="align-items-center">
               <Col md={6}>
                 <p className="copyright">
-                  © {currentYear} Company Name. All rights reserved.
+                  © {currentYear} Immortal Future Infotech. All rights reserved.
                 </p>
               </Col>
               <Col md={6}>

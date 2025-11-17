@@ -9,6 +9,7 @@
   text-align: center;
   position: relative;
   overflow: hidden;
+  /* border: 1px solid; */
 }
 
 .about-hero-content h1 {
@@ -27,7 +28,8 @@
 
 /* Story Section */
 .about-story {
-  padding: 3rem 0;
+  padding: 3rem 3rem;
+  /* border: 2px solid; */
   background: linear-gradient(135deg, rgba(0, 166, 147, 0.05), rgba(13, 202, 240, 0.1), rgba(14, 165, 233, 0.05));
 }
 
@@ -55,14 +57,17 @@
 
 /* Stats Section */
 .about-stats {
-  padding: 2.5rem 0;
+  /* padding: 2.5rem 0; */
   background: linear-gradient(135deg, #00a693, #0dcaf0);
+  padding: 1rem 3rem;
+  /* border: 2px solid; */
 }
 
 .stat-card {
   text-align: center;
   color: white;
   padding: 1.5rem;
+
 }
 
 .stat-card h3 {
@@ -79,8 +84,10 @@
 
 /* Values Section */
 .about-values {
-  padding: 3rem 0;
+  /* padding: 3rem 0; */
   background: linear-gradient(135deg, rgba(0, 166, 147, 0.05), rgba(13, 202, 240, 0.1), rgba(14, 165, 233, 0.05));
+  padding: 3rem 3rem;
+  /* border: 2px solid; */
 }
 
 .section-header {
@@ -107,6 +114,7 @@
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   height: 100%;
+  border: 3px solid #00a693;
 }
 
 .value-card:nth-child(1) {

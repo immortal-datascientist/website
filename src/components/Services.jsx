@@ -40,9 +40,11 @@ const Services = () => {
                 web development, mobile apps, data science, cloud infrastructure, and digital transformation.
               </p>
               <p className="mb-0 text-secondary">
-                We constantly upskill to match the changing technology landscape while delivering
-                impeccable quality and comprehensive after-sales support.
+                We constantly upskill to match the changing technology landscape while delivering impeccable quality and comprehensive after-sales support.
                 Comprehensive solutions designed to streamline your business operations and drive growth.
+                We focus on building future-ready systems that enhance efficiency and adaptability.
+                Our team follows industry-best practices to ensure reliability, security, and long-term value.
+                With a customer-centric approach, we ensure seamless implementation and measurable results for your organization.
               </p>
             </div>
           </Col>

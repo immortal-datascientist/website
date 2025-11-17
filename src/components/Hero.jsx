@@ -43,7 +43,7 @@ const Hero = () => {
 
   return (
     <section className="hero-section">
-      <div className="container-fluid px-2 py-2 d-flex justify-content-center">
+      <div className="container-fluid d-flex justify-content-center">
         <div className="hero-wrap">
           <div className="hero-left">
             <h1 className="hero-title">

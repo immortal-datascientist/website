@@ -1,11 +1,13 @@
 .about-section {
-  min-height: 80vh;
+  min-height: 90%;
   /* background: linear-gradient(135deg, rgba(0, 166, 147, 0.05), rgba(13, 202, 240, 0.1), rgba(14, 165, 233, 0.05)); */
   background: linear-gradient(135deg, rgba(0, 166, 147, 0.05), rgba(13, 202, 240, 0.1), rgba(14, 165, 233, 0.05));
-  padding: 1rem 0;
+  padding: 3rem 0;
   position: relative;
   overflow: hidden;
+  width: 100%;
   /* border: 1px solid; */
+  padding-left: 40px;
 }
 
 
@@ -85,11 +87,12 @@
   background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 50%, #cbd5e1 100%) !important;
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding: 30px;
+  /* border: 1px solid; */
 }
 
 .about-description {
-  font-size: 0.95rem !important;
+  font-size: 1.01rem !important;
   line-height: 1.6 !important;
   flex: 1;
 }
