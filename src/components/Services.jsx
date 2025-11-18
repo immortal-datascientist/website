@@ -38,6 +38,8 @@ const Services = () => {
               <p className="lead mb-3">
                 We're a digital & software company delivering end-to-end solutions across
                 web development, mobile apps, data science, cloud infrastructure, and digital transformation.
+                We focus on building scalable, high-performance solutions tailored to your business goals.
+                Our team combines innovation, precision, and modern technology to deliver impactful results that drive growth.
               </p>
               <p className="mb-0 text-secondary">
                 We constantly upskill to match the changing technology landscape while delivering impeccable quality and comprehensive after-sales support.

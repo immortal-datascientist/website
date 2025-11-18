@@ -8,7 +8,7 @@
 
 .hero-section {
   position: relative;
-  min-height: calc(95vh - var(--nav-height));
+  min-height: calc(93vh - var(--nav-height));
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -303,7 +303,7 @@
 .phone {
   position: relative;
   width: min(392px, 92vw);
-  height: 546px;
+  height: 600px;
   border-radius: 26px;
   background: var(--white);
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);

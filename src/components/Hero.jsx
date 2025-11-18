@@ -69,9 +69,11 @@ const Hero = () => {
               transition={{ duration: 0.6, delay: 2.8 }}
             >
               At Immortal Future Infotech, we craft digital solutions that transcend time and technology boundaries.
-              Our innovative approach combines cutting-edge development with timeless design principles to deliver
-              exceptional web experiences. We believe in creating technology that evolves with your business needs,
-              ensuring your digital presence remains future-ready and competitive.
+              Our innovative approach blends cutting-edge development with timeless design principles to deliver exceptional digital experiences.
+              We focus on building technology that evolves alongside your business, ensuring long-term growth and adaptability.
+              With a commitment to quality and creativity, we shape solutions that make your brand stand out in the digital world.
+              Our team transforms ideas into impactful, future-ready products tailored to your goals.
+              Partner with us to create technology that lasts, inspires, and leads the way forward.
             </motion.p>
 
             <motion.div

@@ -26,7 +26,7 @@ const ServicesPage = () => {
       shortDesc: "End-to-end web applications with modern technology stacks",
       fullDesc: "We build robust, scalable web applications using cutting-edge technologies like React, Node.js, Python, and cloud platforms. Our full-stack solutions cover everything from responsive frontend interfaces to powerful backend APIs and database architecture.",
       features: ["React & Vue.js Frontend", "Node.js & Python Backend", "Database Design & Optimization", "API Development & Integration", "Cloud Deployment & Scaling"],
-      image: "/assets/images/web-devs.jpg",
+      image: "/assets/images/fullsk.png",
       technologies: ["React", "Node.js", "Python", "MongoDB", "PostgreSQL", "AWS"]
     },
     {
@@ -36,7 +36,7 @@ const ServicesPage = () => {
       shortDesc: "Transform data into actionable business insights",
       fullDesc: "Our data science team helps organizations unlock the value in their data through advanced analytics, machine learning models, and intelligent dashboards. We create data pipelines that turn raw information into strategic advantages.",
       features: ["Machine Learning Models", "Predictive Analytics", "Data Visualization", "Business Intelligence", "Real-time Dashboards"],
-      image: "/assets/images/datascience.png",
+      image: "/assets/images/data22.png",
       technologies: ["Python", "R", "TensorFlow", "Tableau", "Power BI", "Apache Spark"]
     },
     {
@@ -46,18 +46,38 @@ const ServicesPage = () => {
       shortDesc: "Native and cross-platform mobile solutions",
       fullDesc: "We develop high-performance mobile applications for iOS and Android platforms. Whether you need native apps for optimal performance or cross-platform solutions for faster deployment, we deliver exceptional mobile experiences.",
       features: ["iOS Native Development", "Android Native Development", "React Native Apps", "Flutter Development", "App Store Optimization"],
-      image: "/assets/images/mob-app-dev.jpg",
+      image: "/assets/images/app1.png",
       technologies: ["Swift", "Kotlin", "React Native", "Flutter", "Firebase", "Redux"]
     },
     {
       id: 4,
-      title: "Artificial Intelligence",
-      icon: "🤖",
-      shortDesc: "AI-powered solutions for business automation",
-      fullDesc: "Harness the power of artificial intelligence to automate processes, enhance decision-making, and create intelligent user experiences. Our AI solutions include chatbots, recommendation systems, and predictive models.",
-      features: ["Natural Language Processing", "Computer Vision", "Chatbot Development", "Recommendation Systems", "Predictive Modeling"],
-      image: "/assets/images/ai5.png",
-      technologies: ["TensorFlow", "PyTorch", "OpenAI", "Hugging Face", "scikit-learn", "NLTK"]
+      title: "IoT Solutions",
+      icon: "🌐",
+      shortDesc: "Internet of Things development and smart device connectivity",
+      fullDesc: "Connect and control your physical world with our comprehensive IoT solutions. We design smart device ecosystems, sensor integration, and real-time monitoring systems that transform how businesses operate and interact with their environment.",
+      features: ["Smart Device Integration", "Sensor Networks", "Real-time Monitoring", "Cloud Connectivity", "Mobile Control Apps"],
+      image: "/assets/images/iot1.png",
+      technologies: ["Arduino", "Raspberry Pi", "MQTT", "AWS IoT", "Node-RED", "InfluxDB"]
+    },
+    {
+      id: 7,
+      title: "Salesforce Solutions",
+      icon: "⚡",
+      shortDesc: "CRM implementation and customization services",
+      fullDesc: "Maximize your customer relationships with expert Salesforce implementation and customization. We help businesses leverage CRM power to streamline sales processes, enhance customer service, and drive marketing automation with integrated workflows.",
+      features: ["CRM Implementation", "Sales Automation", "Custom Development", "Data Migration", "User Training"],
+      image: "/assets/images/sales.png",
+      technologies: ["Salesforce", "Apex", "Lightning", "Visualforce", "SOQL", "REST APIs"]
+    },
+    {
+      id: 8,
+      title: "SAP Implementation",
+      icon: "🏢",
+      shortDesc: "Enterprise resource planning and business process optimization",
+      fullDesc: "Transform your business operations with comprehensive SAP implementation services. We provide end-to-end ERP solutions, system integration, and process optimization to streamline your enterprise workflows and enhance operational efficiency.",
+      features: ["ERP Implementation", "Module Configuration", "System Integration", "Process Optimization", "User Training"],
+      image: "/assets/images/sap1.png",
+      technologies: ["SAP ERP", "SAP HANA", "ABAP", "SAP Fiori", "SAP S/4HANA", "SAP BW"]
     },
     {
       id: 5,
@@ -66,7 +86,7 @@ const ServicesPage = () => {
       shortDesc: "Scalable cloud solutions and DevOps",
       fullDesc: "We design and implement robust cloud infrastructure that scales with your business. Our DevOps practices ensure reliable deployments, monitoring, and maintenance of your applications in the cloud.",
       features: ["AWS/Azure/GCP Setup", "CI/CD Pipelines", "Container Orchestration", "Infrastructure as Code", "Monitoring & Logging"],
-      image: "/assets/images/service-three-bg.jpg",
+      image: "/assets/images/cloud.png",
       technologies: ["AWS", "Docker", "Kubernetes", "Terraform", "Jenkins", "Prometheus"]
     },
     {
@@ -76,7 +96,7 @@ const ServicesPage = () => {
       shortDesc: "Comprehensive banking software training",
       fullDesc: "Master Finacle, the world's leading core banking solution, with our expert-led training programs. We provide hands-on experience with real-world banking scenarios and industry best practices.",
       features: ["Core Banking Modules", "Internet Banking", "Treasury Management", "Risk Management", "Certification Programs"],
-      image: "/assets/images/finance.jpg",
+      image: "/assets/images/finacleimgg.png",
       technologies: ["Finacle", "Oracle", "Java", "SQL", "Banking APIs", "Financial Systems"]
     }
   ];
@@ -118,26 +138,26 @@ const ServicesPage = () => {
         {/* Stacked Services Cards */}
         <section className="c-services">
           <h1 className="c-services__title">Our Services</h1>
-          
+
           <div className="c-services__list">
             {services.map((service, index) => (
               <article key={service.id} className="c-services__item">
                 <figure className="c-services__item-figure">
                   <img src={service.image} alt={service.title} />
                 </figure>
-                
+
                 <div className="c-services__item-info">
                   <h2 className="c-services__item-title">{service.title}</h2>
                   <p className="c-services__item-subtitle">{service.shortDesc}</p>
                   <p className="c-services__item-excerpt">{service.fullDesc}</p>
-                  
+
                   <div className="c-services__item-features">
                     {service.features.slice(0, 3).map((feature, idx) => (
                       <span key={idx} className="feature-tag">• {feature}</span>
                     ))}
                   </div>
-                  
-                  <button 
+
+                  <button
                     className="c-services__item-link"
                     onClick={() => handleServiceClick(index)}
                   >
