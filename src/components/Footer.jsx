@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Container, Row, Col } from 'react-bootstrap';
+import { MapPin, Mail, Phone } from 'lucide-react';
 import './Footer.css';
 
 const Footer = () => {
@@ -46,11 +47,58 @@ const Footer = () => {
                 <p className="brand-tagline">
                   Transforming ideas into digital reality with cutting-edge technology and innovative solutions.
                 </p>
-
               </motion.div>
             </Col>
 
-            <Col lg={2} md={6}>
+            <div className="footer-links-grid d-block d-md-none">
+              <motion.div variants={itemVariants} className="footer-links">
+                <h5>Services</h5>
+                <ul>
+                  <li><a href="#services">Web Development</a></li>
+                  <li><a href="#services">Mobile Apps</a></li>
+                  <li><a href="#services">UI/UX Design</a></li>
+                  <li><a href="#services">Data Science</a></li>
+                </ul>
+              </motion.div>
+
+              <motion.div variants={itemVariants} className="footer-links">
+                <h5>Industries</h5>
+                <ul>
+                  <li><a href="#industries">Fullstack Development</a></li>
+                  <li><a href="#industries">Finacle</a></li>
+                  <li><a href="#industries">E-commerce</a></li>
+                  <li><a href="#industries">Education</a></li>
+                </ul>
+              </motion.div>
+
+              <motion.div variants={itemVariants} className="footer-links">
+                <h5>Company</h5>
+                <ul>
+                  <li><a href="#about">About Us</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                  <li><a href="#careers">Careers</a></li>
+                  <li><a href="#blog">Blog</a></li>
+                </ul>
+              </motion.div>
+
+              <motion.div variants={itemVariants} className="footer-contact">
+                <h5>Contact Info</h5>
+                <div className="contact-item">
+                  <MapPin className="contact-icon" size={16} />
+                  <span>Tamilnadu, India</span>
+                </div>
+                <div className="contact-item">
+                  <Mail className="contact-icon" size={16} />
+                  <span>hr@ifit.co.in</span>
+                </div>
+                <div className="contact-item">
+                  <Phone className="contact-icon" size={16} />
+                  <span>+91 9087875353</span>
+                </div>
+              </motion.div>
+            </div>
+
+            <Col lg={2} md={6} className="d-none d-md-block">
               <motion.div variants={itemVariants} className="footer-links">
                 <h5>Services</h5>
                 <ul>
@@ -62,7 +110,7 @@ const Footer = () => {
               </motion.div>
             </Col>
 
-            <Col lg={2} md={6}>
+            <Col lg={2} md={6} className="d-none d-md-block">
               <motion.div variants={itemVariants} className="footer-links">
                 <h5>Industries</h5>
                 <ul>
@@ -74,7 +122,7 @@ const Footer = () => {
               </motion.div>
             </Col>
 
-            <Col lg={2} md={6}>
+            <Col lg={2} md={6} className="d-none d-md-block">
               <motion.div variants={itemVariants} className="footer-links">
                 <h5>Company</h5>
                 <ul>
@@ -86,19 +134,19 @@ const Footer = () => {
               </motion.div>
             </Col>
 
-            <Col lg={2} md={6}>
+            <Col lg={2} md={6} className="d-none d-md-block">
               <motion.div variants={itemVariants} className="footer-contact">
                 <h5>Contact Info</h5>
                 <div className="contact-item">
-                  <span className="contact-icon">📍</span>
+                  <MapPin className="contact-icon" size={16} />
                   <span>Tamilnadu, India</span>
                 </div>
                 <div className="contact-item">
-                  <span className="contact-icon">📧</span>
+                  <Mail className="contact-icon" size={16} />
                   <span>hr@ifit.co.in</span>
                 </div>
                 <div className="contact-item">
-                  <span className="contact-icon">📞</span>
+                  <Phone className="contact-icon" size={16} />
                   <span>+91 9087875353</span>
                 </div>
               </motion.div>

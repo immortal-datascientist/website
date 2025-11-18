@@ -98,7 +98,37 @@
 }
 
 @media (max-width: 768px) {
+  .about-section {
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+
+  .about-box {
+    margin: 0 auto 2rem auto;
+    text-align: center;
+  }
+
   .about-description {
     font-size: 0.9rem !important;
+    text-align: center;
+  }
+
+  .section-heading {
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-section {
+    padding: 1.5rem 0.5rem;
+  }
+
+  .about-box {
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .about-description {
+    font-size: 0.85rem !important;
   }
 }

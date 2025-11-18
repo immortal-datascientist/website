@@ -59,31 +59,33 @@ function Navigation() {
                 <div className="hamburger-menu" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
                     {mobileMenuOpen ? <FaTimes className="menu-toggle-icon" /> : <FaBars className="menu-toggle-icon" />}
                 </div>
-                <div className={`mobile-menu-dropdown ${mobileMenuOpen ? 'active' : ''}`}>
-                    <div className="mobile-menu-header">
-                        <FaTimes className="close-icon" onClick={() => setMobileMenuOpen(false)} />
+                {mobileMenuOpen && (
+                    <div className="mobile-menu-dropdown active">
+                        <div className="mobile-menu-header">
+                            <FaTimes className="close-icon" onClick={() => setMobileMenuOpen(false)} />
+                        </div>
+                        <Link to="/" className="mobile-menu-item" onClick={() => setMobileMenuOpen(false)}>
+                            <FaHome className="menu-icon" />
+                            <span>HOME</span>
+                        </Link>
+                        <Link to="/about" className="mobile-menu-item" onClick={() => setMobileMenuOpen(false)}>
+                            <FaUser className="menu-icon" />
+                            <span>ABOUT</span>
+                        </Link>
+                        <Link to="/services" className="mobile-menu-item" onClick={() => setMobileMenuOpen(false)}>
+                            <FaBriefcase className="menu-icon" />
+                            <span>SERVICES</span>
+                        </Link>
+                        <Link to="/portfolio" className="mobile-menu-item" onClick={() => setMobileMenuOpen(false)}>
+                            <FaFolderOpen className="menu-icon" />
+                            <span>PORTFOLIO</span>
+                        </Link>
+                        <Link to="/contact" className="mobile-menu-item" onClick={() => setMobileMenuOpen(false)}>
+                            <FaPhone className="menu-icon" />
+                            <span>CONTACT</span>
+                        </Link>
                     </div>
-                    <Link to="/" className="mobile-menu-item" onClick={() => setMobileMenuOpen(false)}>
-                        <FaHome className="menu-icon" />
-                        <span>HOME</span>
-                    </Link>
-                    <Link to="/about" className="mobile-menu-item" onClick={() => setMobileMenuOpen(false)}>
-                        <FaUser className="menu-icon" />
-                        <span>ABOUT</span>
-                    </Link>
-                    <Link to="/services" className="mobile-menu-item" onClick={() => setMobileMenuOpen(false)}>
-                        <FaBriefcase className="menu-icon" />
-                        <span>SERVICES</span>
-                    </Link>
-                    <Link to="/portfolio" className="mobile-menu-item" onClick={() => setMobileMenuOpen(false)}>
-                        <FaFolderOpen className="menu-icon" />
-                        <span>PORTFOLIO</span>
-                    </Link>
-                    <Link to="/contact" className="mobile-menu-item" onClick={() => setMobileMenuOpen(false)}>
-                        <FaPhone className="menu-icon" />
-                        <span>CONTACT</span>
-                    </Link>
-                </div>
+                )}
             </div>
         </nav>
     );

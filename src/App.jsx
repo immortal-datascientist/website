@@ -11,6 +11,7 @@ import Products from './components/Products'
 import DevelopmentProcess from './components/DevelopmentProcess'
 import Contact from './components/Contact'
 import Portfolio from './components/Portfolio'
+// import InfoCards from './components/InfoCards'
 
 import LoadingScreen from './components/LoadingScreen'
 import Footer from './components/Footer'
@@ -67,6 +68,7 @@ function App() {
                     <Products />
                     <DevelopmentProcess />
                     <Portfolio />
+                    {/* <InfoCards /> */}
                     <Contact />
                     <Footer />
                     <ChatWidget />

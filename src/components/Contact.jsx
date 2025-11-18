@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { Mail, Phone, MapPin, Send, Linkedin, MessageCircle } from 'lucide-react'
 import './Contact.css'
+import { HeartPulseFill } from 'react-bootstrap-icons'
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -29,7 +30,7 @@ const Contact = () => {
       icon: Mail,
       title: 'Email Us',
       info: 'hr@ifit.co.in',
-      link: 'mailto:hello@immortalfuture.tech'
+      link: 'https://mail.google.com/mail/?view=cm&fs=1&to=hr@ifit.co.in'
     },
     {
       icon: Phone,
@@ -47,8 +48,8 @@ const Contact = () => {
 
   const socialLinks = [
     { icon: Linkedin, href: 'https://www.linkedin.com/company/immortal-future-infotech-india-private-limited/', label: 'LinkedIn' },
-    { icon: MessageCircle, href: 'https://wa.me/919159855985', label: 'WhatsApp' },
-    { icon: Mail, href: 'mailto:hr@ifit.co.in', label: 'Email' }
+    { icon: MessageCircle, href: 'https://wa.me/919087875353', label: 'WhatsApp' },
+    { icon: Mail, href: 'https://mail.google.com/mail/?view=cm&fs=1&to=hr@ifit.co.in', label: 'Email' }
   ]
 
   return (
@@ -201,6 +202,8 @@ const Contact = () => {
                     whileTap={{ scale: 0.9 }}
                     className="social-link"
                     aria-label={social.label}
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <social.icon size={20} />
                   </motion.a>

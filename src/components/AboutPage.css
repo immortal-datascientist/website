@@ -242,6 +242,12 @@
   .about-team,
   .about-mission {
     padding: 2.5rem 0;
+    text-align: center;
+  }
+
+  .about-story h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
   }
 
   .about-hero {

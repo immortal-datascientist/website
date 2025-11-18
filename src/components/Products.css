@@ -32,7 +32,7 @@
 .products-viewport {
   width: 100%;
   overflow: hidden;
-  height: 180px;
+  height: 250px;
   display: flex;
   align-items: center;
   margin-top: 1rem;
@@ -61,18 +61,18 @@
 }
 
 .product-card {
-  width: 380px;
-  height: 200px;
+  width: 450px;
+  height: 220px;
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 1rem;
-  padding: 1rem;
+  gap: 1.5rem;
+  padding: 1.5rem;
   transition: all 0.3s ease;
   flex-shrink: 0;
   position: relative;
   background: rgba(255, 255, 255, 0.9);
-  border-radius: 15px;
+  border-radius: 20px;
   backdrop-filter: blur(10px);
   border: 2px solid rgba(0, 166, 147, 0.2);
   margin: 0 1rem;
@@ -84,10 +84,10 @@
 }
 
 .product-icon {
-  font-size: 2.2rem;
+  font-size: 2.8rem;
   flex-shrink: 0;
-  width: 55px;
-  height: 55px;
+  width: 70px;
+  height: 70px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -109,23 +109,23 @@
 }
 
 .product-title {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-weight: 600;
   color: #00a693;
-  margin: 0 0 10px 0;
+  margin: 0 0 12px 0;
   line-height: 1.2;
   text-align: left;
 }
 
 .product-desc {
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: rgba(80, 75, 75, 0.8);
-  line-height: 1.4;
+  line-height: 1.5;
   margin: 0;
   text-align: left;
   white-space: pre-line;
   display: -webkit-box;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
@@ -221,6 +221,10 @@
   line-height: 1.4;
   margin: 0;
   text-align: left;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 /* Product Expand Button */
@@ -243,6 +247,18 @@
   opacity: 1;
   transform: scale(1);
   z-index: 10;
+}
+
+.product-mobile-card .product-expand-btn {
+  position: relative;
+  top: auto;
+  right: auto;
+  margin-left: auto;
+  align-self: flex-start;
+  width: 30px;
+  height: 30px;
+  font-size: 1rem;
+  flex-shrink: 0;
 }
 
 .product-expand-btn:hover {
