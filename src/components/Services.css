@@ -76,12 +76,19 @@
 }
 
 /* LEFT boxes container */
-.services-left-boxes {
+.services-left-container {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
     height: min(78vh, 760px);
     align-items: stretch;
+}
+
+.services-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 /* LEFT card */
@@ -167,13 +174,14 @@
 
 .services-left .lead {
     line-height: 1.6;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.2rem;
     color: #374151;
 }
 
-.services-left .text-secondary {
+.services-left .leading {
     line-height: 1.6;
-    font-size: 0.95rem;
+    font-size: 1.2rem;
+    color: #374151;
 }
 
 
@@ -217,14 +225,13 @@
         padding: 2rem 20px;
     }
 
-    .services-left-boxes {
+    .services-left-container {
         gap: 1rem;
         margin-bottom: 2rem;
         height: auto;
     }
 
-    .services-upper-box,
-    .services-lower-box {
+    .services-left {
         height: fit-content;
     }
 
