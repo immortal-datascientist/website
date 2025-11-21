@@ -3,6 +3,7 @@ import { Container, Row, Col } from 'react-bootstrap'
 import { FaShoppingCart, FaLaptopCode, FaMobileAlt, FaPalette, FaChartBar, FaCloud, FaChartLine, FaHandshake, FaShieldAlt, FaUniversity, FaFileInvoiceDollar, FaUsers, FaBoxes, FaSalesforce, FaWifi, FaCogs } from 'react-icons/fa'
 import './Services.css'
 import Industries from './Industries'
+// import DeploymentShowcase from './DeploymentShowcase'
 
 const SERVICES = [
   { title: "E-commerce Development", desc: "Custom storefronts that scale reliably with modern frameworks. Built with React, Next.js, and secure payment integrations for optimal user experience.", icon: FaShoppingCart },
@@ -33,23 +34,21 @@ const Services = () => {
         </div>
         <Row className="g-4 align-items-center">
           <Col lg={6}>
-            <div className="services-left-boxes">
-              <div className="services-upper-box card-like">
-                <h3 className="section-heading-left">We Are Providing Services</h3>
-                <p className="lead mb-0">
-                  We're a digital & software company delivering end-to-end solutions across
-                  web development, mobile apps, data science, cloud infrastructure, and digital transformation.
-                  We focus on building scalable, high-performance solutions tailored to your business goals.
-                </p>
-              </div>
-              <div className="services-lower-box card-like">
-                <h3 className="section-heading-left">Our Approach</h3>
-                <p className="mb-0 text-secondary">
-                  We constantly upskill to match the changing technology landscape while delivering impeccable quality and comprehensive after-sales support.
-                  Our team follows industry-best practices to ensure reliability, security, and long-term value.
-                  With a customer-centric approach, we ensure seamless implementation and measurable results.
-                </p>
-              </div>
+            <div className="services-left card-like sticky-left">
+              <h3 className="section-heading-left">We Are Providing Services</h3>
+              <p className="lead mb-3">
+                We're a digital & software company delivering end-to-end solutions across
+                web development, mobile apps, data science, cloud infrastructure, and digital transformation.
+                We focus on building scalable, high-performance solutions tailored to your business goals.
+                Our team combines innovation, precision, and modern technology to deliver impactful results that drive growth.
+              </p>
+              <p className="mb-0 text-secondary">
+                We constantly upskill to match the changing technology landscape while delivering impeccable quality and comprehensive after-sales support.
+                Comprehensive solutions designed to streamline your business operations and drive growth.
+                We focus on building future-ready systems that enhance efficiency and adaptability.
+                Our team follows industry-best practices to ensure reliability, security, and long-term value.
+                With a customer-centric approach, we ensure seamless implementation and measurable results for your organization.
+              </p>
             </div>
           </Col>
 
