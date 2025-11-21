@@ -18,6 +18,7 @@ import Footer from './components/Footer'
 import ChatWidget from './components/ChatWidget'
 import './App.css'
 import Navigation from './components/Navigation'
+// import DeploymentShowcase from './components/DeploymentShowcase'
 
 function App() {
   const [loading, setLoading] = useState(true)
@@ -67,6 +68,7 @@ function App() {
                     <Services />
                     <Products />
                     <DevelopmentProcess />
+                    {/* <DeploymentShowcase /> */}
                     <Portfolio />
                     {/* <InfoCards /> */}
                     <Contact />
